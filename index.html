@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>ThalirX Tech | Web Development Company in India | Custom Apps & Scalable Systems</title>
+    <meta name="description"
+        content="ThalirX Tech is a web development company in India building custom web applications, scalable backend systems, and high-performance websites.">
+    <meta name="keywords"
+        content="ThalirX Tech, web development company in India, custom web application development, scalable web applications, backend development services, full stack developer India, React web development, Node.js backend development, Java backend developer India, API development services, SaaS application development, responsive website development, UI UX design services India, website performance optimization, secure web applications, best web development company in Tamil Nadu, affordable web development services India, hire full stack developer India, build scalable web app for startup, website development for small business India, ThalirX Studio">
+    <link rel="canonical" href="https://thalirxtech.netlify.app/">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thalirxtech.netlify.app/">
+    <meta property="og:title" content="ThalirX Tech | Web Development Company in India">
+    <meta property="og:description"
+        content="Custom web apps, scalable backend systems, and modern websites for businesses.">
+    <meta property="og:image" content="https://thalirxtech.netlify.app/assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://thalirxtech.netlify.app/">
+    <meta property="twitter:title" content="ThalirX Tech">
+    <meta property="twitter:description"
+        content="Web development company in India building scalable digital solutions.">
+    <meta property="twitter:image" content="https://thalirxtech.netlify.app/assets/logo.png">
+
+    <!-- Geo SEO -->
+    <meta name="geo.region" content="IN-TN">
+    <meta name="geo.placename" content="Tamil Nadu, India">
+
+    <!-- Advanced JSON-LD for AI & Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://thalirxtech.netlify.app/#organization",
+          "name": "ThalirX Tech",
+          "url": "https://thalirxtech.netlify.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://thalirxtech.netlify.app/assets/logo.png"
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Kavin G",
+            "jobTitle": "Lead Developer & Founder",
+            "url": "https://thalirxtech.netlify.app/"
+          },
+          "sameAs": [
+            "https://github.com/Kavin81805",
+            "https://linkedin.com/in/thalirx-studio/",
+            "https://youtube.com/@THALIRX_STUDIO",
+            "https://www.instagram.com/thalirx_studio"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://thalirxtech.netlify.app/#website",
+          "url": "https://thalirxtech.netlify.app/",
+          "name": "ThalirX Tech",
+          "publisher": { "@id": "https://thalirxtech.netlify.app/#organization" },
+          "description": "Beyond Code, Build the Future."
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://thalirxtech.netlify.app/#service",
+          "name": "ThalirX Tech Web Development",
+          "image": "https://thalirxtech.netlify.app/assets/logo.png",
+          "priceRange": "$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tamil Nadu",
+            "addressCountry": "IN"
+          },
+          "telephone": "+916382494746",
+          "url": "https://thalirxtech.netlify.app/",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Web Development Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Custom Web Application Development",
+                  "description": "Tailor-made web apps built from scratch with modern tech stacks."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Full-Stack Development",
+                  "description": "Expert frontend and backend integration using Node.js, React, and more."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Scalable Backend Systems",
+                  "description": "Robust architecture designed for growth and performance."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-logo-container">
+            <img src="assets/logo.png" alt="ThalirX Logo" class="preloader-logo">
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Back to Top -->
+    <button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="mainNav">
+        <a href="#home" class="logo-link">
+            <div class="logo">
+                <img src="assets/logo.png" alt="ThalirX Tech web development company India" class="nav-logo"
+                    loading="lazy" decoding="async">
+            </div>
+        </a>
+        <div class="nav-toggle" id="navToggle" role="button" aria-label="Toggle Navigation Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <ul class="nav-links" id="navMenu">
+        <li style="--i: 1"><a href="#home"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
+        <li style="--i: 2"><a href="#about"><i class="fa-solid fa-bullseye"></i><span>Why Us</span></a></li>
+        <li style="--i: 3"><a href="#services"><i class="fa-solid fa-gears"></i><span>Services</span></a></li>
+        <li style="--i: 4"><a href="#process"><i class="fa-solid fa-diagram-project"></i><span>Process</span></a></li>
+        <li style="--i: 5"><a href="#tech"><i class="fa-solid fa-microchip"></i><span>Tech Stack</span></a></li>
+        <li style="--i: 6"><a href="Clientwork.html"><i class="fa-solid fa-briefcase"></i><span>Client Work</span></a>
+        </li>
+        <li style="--i: 7"><a href="#contact"><i class="fa-solid fa-address-book"></i><span>Contact</span></a></li>
+        <li style="--i: 8"><a href="https://thalirxstudio.netlify.app/" class="nav-back-link"><i
+                    class="fa-solid fa-gamepad"></i><span>Game Studio</span></a></li>
+    </ul>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- HERO -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="home" class="hero">
+        <video autoplay loop muted playsinline class="hero-bg-video">
+            <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="assets/logo.png" alt="ThalirX Tech web development company India" class="hero-brand-logo"
+                loading="lazy" decoding="async">
+            <div class="hero-title-wrapper">
+                <h1 class="hero-title" data-text="THALIRX TECH">THALIRX TECH <span
+                        style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Web
+                        Development Company in India</span></h1>
+            </div>
+            <p class="hero-subtitle">WEB DEVELOPMENT COMPANY IN INDIA | BEYOND CODE, BUILD THE FUTURE</p>
+            <a href="#services" class="btn-primary">EXPLORE SERVICES</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>SCROLL</p>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- ABOUT / WHY US -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">WHY THALIRX TECH | WEB DEVELOPMENT COMPANY IN INDIA</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p
+                        style="color: var(--text-primary); font-weight: 600; font-size: 1.1rem; border-left: 3px solid var(--highlight-green); padding-left: 1rem; margin-bottom: 2rem;">
+                        We don't just build websites — we engineer digital experiences that are fast, scalable, and
+                        built to last.
+                    </p>
+                    <p>
+                        At <span class="highlight">ThalirX Tech</span>, web development is treated with the same
+                        precision and craft we apply to game engineering. Every line of code is intentional.
+                        Every interface is designed for impact.
+                    </p>
+                    <p style="color: var(--highlight-green); font-weight: 700;">
+                        ThalirX Tech is a web development company in India building custom web applications, scalable
+                        backend systems, and high-performance websites for businesses worldwide.
+                    </p>
+                    <p>
+                        Our team of <span class="highlight">full stack developers in India</span> provides affordable
+                        web development services, focusing on <span class="highlight">building scalable web apps for
+                            startups</span> and <span class="highlight">website development for small businesses in
+                            India</span>.
+                    </p>
+                    <p>
+                        From <span class="highlight">responsive frontends</span> to <span class="highlight">robust
+                            backend systems</span>,
+                        we handle the complete product lifecycle — planning, designing, developing, testing, and
+                        deploying —
+                        so you can focus on growing your business.
+                    </p>
+                    <p>
+                        Whether you need a <span class="highlight">business website</span>, a <span
+                            class="highlight">custom web application</span>,
+                        or a <span class="highlight">full e-commerce platform</span> — we build it with performance,
+                        security, and scalability
+                        at the core.
+                    </p>
+                </div>
+                <div class="about-visual">
+                    <div class="why-grid">
+                        <div class="why-card glass-panel" data-tilt>
+                            <div class="why-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3><span class="highlight">Clean Code</span></h3>
+                            <p>Hand-crafted, maintainable code — no bloated page builders or templates.</p>
+                        </div>
+                        <div class="why-card glass-panel" data-tilt>
+                            <div class="why-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <h3><span class="highlight">Mobile First</span></h3>
+                            <p>Every project starts responsive. Pixel-perfect on any device.</p>
+                        </div>
+                        <div class="why-card glass-panel" data-tilt>
+                            <div class="why-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <h3><span class="highlight">Fast & Optimized</span></h3>
+                            <p>Performance-driven architecture. Sub-second load times.</p>
+                        </div>
+                        <div class="why-card glass-panel" data-tilt>
+                            <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h3><span class="highlight">Secure & Scalable</span></h3>
+                            <p>Built for growth with security best practices baked in.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Mission and Stats Layout -->
+            <div class="mission-stats-layout">
+                <!-- Left Column: Vision & Mission -->
+                <div class="mission-vision-container">
+                    <div class="glass-panel vision-mission-stack" data-tilt>
+                        <div class="stat vision-stat">
+                            <h3>OUR VISION</h3>
+                            <p>To grow ThalirX into a recognized creative brand in the global gaming and technology
+                                industry, while continuing to experiment, innovate, and build new digital worlds.</p>
+                        </div>
+
+                        <div class="divider-line"></div>
+
+                        <div class="stat vision-stat">
+                            <h3>OUR MISSION</h3>
+                            <p>To combine creativity, design, and engineering to build products that people can interact
+                                with, explore, and remember.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Stats Grid -->
+                <div class="stats-container">
+                    <div class="stats-grid">
+                        <div class="stat-item glass-panel" data-tilt>
+                            <span class="stat-static-value">1</span>
+                            <span class="stat-label">Finished Project</span>
+                        </div>
+                        <div class="stat-item glass-panel" data-tilt>
+                            <span class="stat-static-value">2</span>
+                            <span class="stat-label">Active Project</span>
+                        </div>
+                        <div class="stat-item glass-panel" data-tilt>
+                            <div class="counter-container" data-target="3" id="clientCounter"></div>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                        <div class="stat-item glass-panel" data-tilt>
+                            <span class="stat-static-value">2025</span>
+                            <span class="stat-label">Est. Year</span>
+                        </div>
+                        <div class="stat-item glass-panel" data-tilt style="grid-column: 1 / -1; padding: 2rem;">
+                            <div class="counter-container" data-target="47" id="communityCounter"></div>
+                            <span class="stat-label">Community Members</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-connection-section" style="margin-top: 4rem; text-align: center;">
+                <p
+                    style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); max-width: 900px; margin: 0 auto; padding: 2rem; border-top: 1px solid var(--border-color);">
+                    <span class="highlight">ThalirX Tech</span> is part of the broader ThalirX ecosystem, which includes
+                    <span class="highlight">ThalirX Studio</span>, an independent game development studio. Together,
+                    they combine technology and creativity to build powerful digital experiences, bridging the gap
+                    between high-performance software and immersive entertainment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- SERVICES -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">CUSTOM WEB APPLICATION DEVELOPMENT</h2>
+            <div class="services-grid">
+
+                <div class="service-card glass-panel" data-tilt>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </div>
+                    <h3><span class="highlight">Scalable Web Applications</span></h3>
+                    <p>ThalirX Tech builds custom web applications in India starting from small business tools to
+                        massive SaaS platforms.</p>
+                    <ul class="service-list">
+                        <li>Dashboard & admin panels</li>
+                        <li>SaaS platforms</li>
+                        <li>Booking & management systems</li>
+                        <li>Internal business tools</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-panel" data-tilt>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3><span class="highlight">React Web Development</span></h3>
+                    <p>Stunning, responsive website development using React and Next.js for high-performance user
+                        interfaces.</p>
+                    <ul class="service-list">
+                        <li>React / Next.js applications</li>
+                        <li>Interactive landing pages</li>
+                        <li>Micro-animations & transitions</li>
+                        <li>Cross-browser compatibility</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-panel" data-tilt>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3><span class="highlight">Node.js Backend Development</span></h3>
+                    <p>Robust backend development services in India, powering scalable systems with Node.js and Java.
+                    </p>
+                    <ul class="service-list">
+                        <li>RESTful & GraphQL APIs</li>
+                        <li>Database design & optimization</li>
+                        <li>Authentication & authorization</li>
+                        <li>Cloud deployment & DevOps</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-panel" data-tilt>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <h3><span class="highlight">E-Commerce Solutions</span></h3>
+                    <p>Complete online store setups with secure payment processing and inventory management.</p>
+                    <ul class="service-list">
+                        <li>Product catalog systems</li>
+                        <li>Payment gateway integration</li>
+                        <li>Order tracking & management</li>
+                        <li>SEO-optimized product pages</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-panel" data-tilt>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3><span class="highlight">UI UX Design Services India</span></h3>
+                    <p>Creative UI/UX design services in India focused on conversion-optimized digital experiences.</p>
+                    <ul class="service-list">
+                        <li>Wireframing & prototyping</li>
+                        <li>User flow mapping</li>
+                        <li>Brand-aligned visual design</li>
+                        <li>Accessibility compliance</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-panel" data-tilt>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <h3><span class="highlight">Website Performance Optimization</span></h3>
+                    <p>Optimize your web application for speed and core web vitals to improve Google rankings.</p>
+                    <ul class="service-list">
+                        <li>Core Web Vitals audit</li>
+                        <li>Code splitting & lazy loading</li>
+                        <li>CDN & caching strategies</li>
+                        <li>SEO technical optimization</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- PROCESS -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <h2 class="section-title">RESPONSIVE WEBSITE DEVELOPMENT PROCESS</h2>
+            <div class="process-timeline">
+
+                <div class="process-step glass-panel" data-tilt>
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3><span class="highlight">Discovery</span></h3>
+                        <p>We understand your business goals, target audience, and technical requirements through
+                            in-depth consultations.</p>
+                    </div>
+                </div>
+
+                <div class="process-connector">
+                    <div class="connector-line"></div>
+                </div>
+
+                <div class="process-step glass-panel" data-tilt>
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3><span class="highlight">Design</span></h3>
+                        <p>We create wireframes and visual mockups, iterating until the design perfectly captures your
+                            brand identity.</p>
+                    </div>
+                </div>
+
+                <div class="process-connector">
+                    <div class="connector-line"></div>
+                </div>
+
+                <div class="process-step glass-panel" data-tilt>
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3><span class="highlight">Develop</span></h3>
+                        <p>Our developers build your application using modern frameworks, writing clean, scalable, and
+                            well-documented code.</p>
+                    </div>
+                </div>
+
+                <div class="process-connector">
+                    <div class="connector-line"></div>
+                </div>
+
+                <div class="process-step glass-panel" data-tilt>
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3><span class="highlight">Test & Refine</span></h3>
+                        <p>Rigorous testing across devices and browsers — performance audits, bug fixes, and final
+                            polish before launch.</p>
+                    </div>
+                </div>
+
+                <div class="process-connector">
+                    <div class="connector-line"></div>
+                </div>
+
+                <div class="process-step glass-panel" data-tilt>
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3><span class="highlight">Launch & Support</span></h3>
+                        <p>We deploy your project and provide ongoing support, maintenance, and optimization to keep it
+                            running smoothly.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- TECH STACK -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="tech" class="tech-section">
+        <div class="container">
+            <h2 class="section-title">TECH STACK</h2>
+            <p class="tech-subtitle">Technologies we use to build world-class web experiences</p>
+
+            <div class="tech-category">
+                <h3 class="tech-category-title">FRONTEND</h3>
+                <div class="tech-grid">
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-react"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-solid fa-n"></i>
+                        <span>Next.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3 class="tech-category-title">BACKEND</h3>
+                <div class="tech-grid">
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-solid fa-database"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-solid fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tech-category">
+                <h3 class="tech-category-title">TOOLS & DEPLOYMENT</h3>
+                <div class="tech-grid">
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-brands fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                    <div class="tech-card glass-panel" data-tilt>
+                        <i class="fa-solid fa-fire"></i>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- CLIENT WORK -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="clientwork" class="projects">
+        <div class="container">
+            <h2 class="section-title">SCALABLE WEB APPLICATIONS | CLIENT WORK</h2>
+            <div class="featured-project-container">
+                <a href="Clientwork.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('assets/pf/main.jpeg');"></div>
+                        <div class="project-content">
+                            <span class="project-category">WEB SOLUTIONS</span>
+                            <h3>DIGITAL<br>EXPERIENCES</h3>
+                            <p>Explore high-performance web applications and business-focused digital experiences built
+                                for our clients.</p>
+                            <span class="project-link">EXPLORE WORK</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- FOUNDER -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="founder" class="founder-section">
+        <div class="container">
+            <h2 class="section-title">FULL STACK DEVELOPER INDIA</h2>
+            <div class="founder-container">
+                <div class="founder-card" data-tilt>
+                    <div class="founder-image" style="background-image: url('assets/KAVING.jpeg');"
+                        title="Kavin G - Full Stack Developer India"></div>
+                    <div class="founder-info">
+                        <span class="founder-role">Lead Developer / Founder</span>
+                        <h3>KAVIN G</h3>
+                        <p>Architecting scalable systems.
+                            We build digital worlds. We engineer performance. We deliver high-impact web experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- FAQ SECTION -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+            <div class="faq-grid"
+                style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 800px; margin: 0 auto;">
+                <div class="faq-item glass-panel" style="padding: 2rem;">
+                    <h3 style="color: var(--highlight-green); margin-bottom: 1rem; font-size: 1.1rem;">1. What services
+                        does ThalirX Tech offer?</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">ThalirX Tech is a leading web development
+                        company in India offering custom web application development, React web development, Node.js
+                        backend development, and UI UX design services India. We also specialize in website performance
+                        optimization and building scalable web applications for startups.</p>
+                </div>
+                <div class="faq-item glass-panel" style="padding: 2rem;">
+                    <h3 style="color: var(--highlight-green); margin-bottom: 1rem; font-size: 1.1rem;">2. Why choose
+                        ThalirX Tech for web development?</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Choosing ThalirX Tech means hiring an
+                        expert full stack developer in India who understands performance, security, and scalability. We
+                        provide affordable web development services in India with a focus on clean code and
+                        pixel-perfect responsive designs.</p>
+                </div>
+                <div class="faq-item glass-panel" style="padding: 2rem;">
+                    <h3 style="color: var(--highlight-green); margin-bottom: 1rem; font-size: 1.1rem;">3. Do you build
+                        scalable web applications?</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Yes, we specialize in building scalable
+                        web applications and SaaS platforms. Our backend development services ensure your application
+                        can grow seamlessly as your business expands, using robust technologies like Node.js, Java, and
+                        AWS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- CTA / CONTACT -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2 class="section-title">LET'S BUILD TOGETHER</h2>
+            <p class="cta-text">Have a project in mind? Let's turn your idea into a powerful digital product.</p>
+
+            <div class="cta-grid">
+                <a href="https://wa.me/916382494746?text=Hi%20ThalirX%2C%20I%27m%20interested%20in%20web%20development%20services."
+                    class="cta-card glass-panel" data-tilt target="_blank">
+                    <div class="cta-icon whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                    <h3>WHATSAPP</h3>
+                    <p>Chat with us directly</p>
+                    <span class="cta-link">+91 63824 94746</span>
+                </a>
+
+                <a href="mailto:thalirxmail@gmail.com?subject=Web%20Development%20Inquiry" class="cta-card glass-panel"
+                    data-tilt>
+                    <div class="cta-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>EMAIL</h3>
+                    <p>Send us your requirements</p>
+                    <span class="cta-link">thalirxmail@gmail.com</span>
+                </a>
+
+                <a href="tel:+919786701919" class="cta-card glass-panel" data-tilt>
+                    <div class="cta-icon phone-icon"><i class="fa-solid fa-phone"></i></div>
+                    <h3>CALL</h3>
+                    <p>Speak with our team</p>
+                    <span class="cta-link">+91 97867 01919</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ══════════════════════════════════════════════════ -->
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-logo">THALIRX</h2>
+            <p>Beyond Code, Build the Future</p>
+
+            <h3
+                style="font-size: 0.85rem; letter-spacing: 4px; color: var(--accent); margin-bottom: 2rem; font-family: 'Syncopate', sans-serif;">
+                FOLLOW OUR LEGACY</h3>
+            <div class="social-links" style="margin-top: 0; margin-bottom: 2rem;">
+                <a href="https://discord.gg/AvM7FXssgN" target="_blank" aria-label="Discord"><i
+                        class="fab fa-discord"></i></a>
+                <a href="https://www.instagram.com/thalirx_studio" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/thalirx-studio/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://youtube.com/@THALIRX_STUDIO" target="_blank" aria-label="YouTube"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+
+            <a href="https://thalirxstudio.netlify.app/" class="btn-primary"
+                style="opacity:1; transform:none; margin-bottom: 2rem; border-color: rgba(0, 255, 85, 0.3);">
+                <i class="fa-solid fa-gamepad" style="margin-right: 8px;"></i>GO TO GAME STUDIO
+            </a>
+
+        </div>
+        <div class="footer-bottom">
+            <p style="font-size: 0.75rem; color: rgba(255,255,255,0.2); letter-spacing: 2px;">&copy; 2026 ThalirX.
+                All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

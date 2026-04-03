@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block only sensitive/private files
+Disallow: /assets/private/
+
+# Allow important assets (for SEO rendering)
+Allow: /assets/
+
+Sitemap: https://thalirxtech.netlify.app/sitemap.xml
